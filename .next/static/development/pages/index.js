@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\components\\Index\\ProductList.js";
+var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\components\\Index\\ProductList.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -21163,10 +21163,10 @@ module.exports = lodash;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.20.20MERN%5CMERN%5Cpages%5Cindex.js!./":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.20.20MERN%5CMERN%5Cpages%5Cindex.js ***!
-  \******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.21.20MERN%5Cpages%5Cindex.js!./":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.21.20MERN%5Cpages%5Cindex.js ***!
+  \***********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40391,7 +40391,7 @@ var partitionHTMLProps = function partitionHTMLProps(props) {
 /*!*************************************************************!*\
   !*** ./node_modules/semantic-ui-react/dist/es/lib/index.js ***!
   \*************************************************************/
-/*! exports provided: AutoControlledComponent, getChildMapping, mergeChildMappings, childrenUtils, useKeyOnly, useKeyOrValueAndKey, useValueAndKey, useMultipleProp, useTextAlignProp, useVerticalAlignProp, useWidthProp, customPropTypes, eventStack, getUnhandledProps, getElementType, htmlInputAttrs, htmlInputEvents, htmlInputProps, htmlImageProps, partitionHTMLProps, isBrowser, doesNodeContainClick, leven, createPaginationItems, SUI, numberToWordMap, numberToWord, normalizeOffset, normalizeTransitionDuration, objectDiff, handleRef, isRefObject, createShorthand, createShorthandFactory, createHTMLDivision, createHTMLIframe, createHTMLImage, createHTMLInput, createHTMLLabel, createHTMLParagraph */
+/*! exports provided: AutoControlledComponent, getChildMapping, mergeChildMappings, childrenUtils, useKeyOnly, useKeyOrValueAndKey, useValueAndKey, useMultipleProp, useTextAlignProp, useVerticalAlignProp, useWidthProp, customPropTypes, eventStack, createShorthand, createShorthandFactory, createHTMLDivision, createHTMLIframe, createHTMLImage, createHTMLInput, createHTMLLabel, createHTMLParagraph, getUnhandledProps, getElementType, htmlInputAttrs, htmlInputEvents, htmlInputProps, htmlImageProps, partitionHTMLProps, isBrowser, doesNodeContainClick, leven, createPaginationItems, SUI, numberToWordMap, numberToWord, normalizeOffset, normalizeTransitionDuration, objectDiff, handleRef, isRefObject */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53278,7 +53278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_baseUrl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/baseUrl */ "./utils/baseUrl.js");
 
 
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -53344,13 +53344,13 @@ var baseUrl =  false ? undefined : "http://localhost:3000";
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.20.20MERN%5CMERN%5Cpages%5Cindex.js ***!
-  \**********************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.21.20MERN%5Cpages%5Cindex.js ***!
+  \***************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.20.20MERN%5CMERN%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.20.20MERN%5CMERN%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.21.20MERN%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.21.20MERN%5Cpages%5Cindex.js!./");
 
 
 /***/ }),

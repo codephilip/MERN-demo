@@ -20,7 +20,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/transactions": [
+    "/summary": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

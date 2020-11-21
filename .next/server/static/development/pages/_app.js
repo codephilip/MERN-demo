@@ -104,7 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\components\\_App\\HeadContent.js";
+var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\components\\_App\\HeadContent.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("meta", {
@@ -285,7 +285,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "nprogress");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _utils_auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/auth */ "./utils/auth.js");
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\components\\_App\\Header.js";
+var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\components\\_App\\Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -556,7 +556,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./components/_App/Header.js");
 /* harmony import */ var _HeadContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HeadContent */ "./components/_App/HeadContent.js");
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\components\\_App\\Layout.js";
+var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\components\\_App\\Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1596,7 +1596,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_7__);
 
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 

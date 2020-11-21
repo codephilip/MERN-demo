@@ -6187,7 +6187,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.20.20MERN\\MERN\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\.next");
       return error;
     }
   };
