@@ -1,5 +1,6 @@
 import { Row, Form, Table, Button, Col, FormGroup } from "react-bootstrap";
 import { Header, Segment, Icon } from "semantic-ui-react";
+import AddBuddget from '../Budget/AddBudget';
 
 function budgets() {
   return (
@@ -36,11 +37,14 @@ function budgets() {
             <Form.Control type="number" placeholder="0" />
           </Form.Group>
           </Form.Row>
-          <Button variant="primary" type="submit">
+          <Button id="budgetButton" variant="primary" type="submit">
             Submit
           </Button>
         </Form>
       </Row>
+
+
+
       <Row className="mt-3 mr-0 ml-0">
         <h2>All budgets</h2>
         <Table responsive>

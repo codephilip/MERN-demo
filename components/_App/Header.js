@@ -36,7 +36,7 @@ function Header({ user }) {
 
         <Link href="/about">
           <Menu.Item header active={isActive("/about")}>
-            <Icon name="cart" size="large" />
+            <Icon name="copyright" size="large" />
             About
           </Menu.Item>
         </Link>
@@ -54,19 +54,19 @@ function Header({ user }) {
           <>
             <Link href="/budget">
               <Menu.Item header active={isActive("/budget")}>
-                <Icon name="user" size="large" />
+                <Icon name="dollar sign" size="large" />
                 My Budget
               </Menu.Item>
             </Link>
             <Link href="/summary">
               <Menu.Item header active={isActive("/summary")}>
-                <Icon name="user" size="large" />
+                <Icon name="chart bar" size="large" />
                 Summary
               </Menu.Item>
             </Link>
             <Link href="/transactions">
             <Menu.Item header active={isActive("/transactions")}>
-              <Icon name="user" size="large" />
+              <Icon name="calculator" size="large" />
               Transactions
             </Menu.Item>
           </Link>

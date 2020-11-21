@@ -8,7 +8,6 @@ function Transactions() {
 
     <Segment>
       <TransactionsComponent />
-      <TransactionsComponent />
     </Segment>
   );
   

@@ -9,7 +9,7 @@ function About() {
 
     <Segment>
       <BudgetComponent />
-      <BudgetComponent />
+
     </Segment>
   );
 

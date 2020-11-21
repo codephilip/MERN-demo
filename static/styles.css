@@ -1,7 +1,7 @@
 :root {
   --bodyBg: #f0f4f8;
   --menuBg: rgb(88, 185, 101);
-  --progressBar: #54d1db;
+  --progressBar: #ffbe33;
 }
 
 body {
@@ -11,6 +11,10 @@ body {
 #menu {
   background: var(--menuBg);
   border-radius:0px;
+
+}
+
+#Button{
 
 }
 

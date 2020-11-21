@@ -50,7 +50,7 @@ function MyTransactions() {
             <Form.Control type="number" placeholder="0" />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button id="Button" variant="primary" type="submit">
             Submit
           </Button>
         </Form.Group>

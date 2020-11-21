@@ -40,10 +40,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }), __jsx("link", {
-    rel: "stylesheet",
-    href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css",
-    integrity: "sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS",
-    crossorigin: "anonymous",
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "//static/favicon/BudgetBuddy.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -52,21 +52,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   }), __jsx("link", {
     rel: "icon",
     type: "image/png",
-    sizes: "32x32",
-    href: "//static/favicon/BudgetBuddy.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }), __jsx("link", {
-    rel: "icon",
-    type: "image/png",
     sizes: "16x16",
     href: "/static/favicon/BudgetBuddy.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 17
     },
     __self: this
   }), __jsx("link", {
@@ -74,7 +64,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/static/favicon/site.webmanifest",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 23
     },
     __self: this
   }), __jsx("link", {
@@ -83,7 +73,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     color: "#0041df",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 24
     },
     __self: this
   }), __jsx("meta", {
@@ -91,7 +81,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     content: "#00df94",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 29
     },
     __self: this
   }), __jsx("meta", {
@@ -99,7 +89,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     content: "#00df94",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 30
     },
     __self: this
   }), __jsx("meta", {
@@ -107,14 +97,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 31
     },
     __self: this
   }), __jsx("meta", {
     charSet: "utf-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 32
     },
     __self: this
   }), __jsx("link", {
@@ -123,7 +113,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/static/favicon/BudgetBuddy.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 33
     },
     __self: this
   }), __jsx("link", {
@@ -133,7 +123,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/static/favicon/BudgetBuddy.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 38
     },
     __self: this
   }), __jsx("link", {
@@ -143,7 +133,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/static/favicon/BudgetBuddy.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 44
     },
     __self: this
   }), __jsx("link", {
@@ -151,7 +141,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/static/favicon/site.webmanifest",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 50
     },
     __self: this
   }), __jsx("link", {
@@ -160,7 +150,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     color: "#0041df",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 51
     },
     __self: this
   }), __jsx("meta", {
@@ -168,7 +158,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     content: "#00df94",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 56
     },
     __self: this
   }), __jsx("meta", {
@@ -176,7 +166,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     content: "#00df94",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 57
     },
     __self: this
   }));
@@ -294,7 +284,7 @@ function Header(_ref) {
     },
     __self: this
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    name: "cart",
+    name: "copyright",
     size: "large",
     __source: {
       fileName: _jsxFileName,
@@ -340,7 +330,7 @@ function Header(_ref) {
     },
     __self: this
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    name: "user",
+    name: "dollar sign",
     size: "large",
     __source: {
       fileName: _jsxFileName,
@@ -363,7 +353,7 @@ function Header(_ref) {
     },
     __self: this
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    name: "user",
+    name: "chart bar",
     size: "large",
     __source: {
       fileName: _jsxFileName,
@@ -386,7 +376,7 @@ function Header(_ref) {
     },
     __self: this
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    name: "user",
+    name: "calculator",
     size: "large",
     __source: {
       fileName: _jsxFileName,
@@ -527,17 +517,27 @@ function Layout(_ref) {
       lineNumber: 15
     },
     __self: this
-  }), __jsx("title", {
+  }), __jsx("link", {
+    rel: "stylesheet",
+    href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css",
+    integrity: "sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS",
+    crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, "ReactReserve")), __jsx(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Budget Buddy")), __jsx(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     user: user,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 27
     },
     __self: this
   }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Container"], {
@@ -547,7 +547,7 @@ function Layout(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 28
     },
     __self: this
   }, children));
@@ -48497,7 +48497,7 @@ var partitionHTMLProps = function partitionHTMLProps(props) {
 /*!*************************************************************!*\
   !*** ./node_modules/semantic-ui-react/dist/es/lib/index.js ***!
   \*************************************************************/
-/*! exports provided: AutoControlledComponent, getChildMapping, mergeChildMappings, childrenUtils, useKeyOnly, useKeyOrValueAndKey, useValueAndKey, useMultipleProp, useTextAlignProp, useVerticalAlignProp, useWidthProp, customPropTypes, eventStack, createShorthand, createShorthandFactory, createHTMLDivision, createHTMLIframe, createHTMLImage, createHTMLInput, createHTMLLabel, createHTMLParagraph, getUnhandledProps, getElementType, htmlInputAttrs, htmlInputEvents, htmlInputProps, htmlImageProps, partitionHTMLProps, isBrowser, doesNodeContainClick, leven, createPaginationItems, SUI, numberToWordMap, numberToWord, normalizeOffset, normalizeTransitionDuration, objectDiff, handleRef, isRefObject */
+/*! exports provided: AutoControlledComponent, getChildMapping, mergeChildMappings, childrenUtils, useKeyOnly, useKeyOrValueAndKey, useValueAndKey, useMultipleProp, useTextAlignProp, useVerticalAlignProp, useWidthProp, customPropTypes, eventStack, getUnhandledProps, getElementType, htmlInputAttrs, htmlInputEvents, htmlInputProps, htmlImageProps, partitionHTMLProps, isBrowser, doesNodeContainClick, leven, createPaginationItems, SUI, numberToWordMap, numberToWord, normalizeOffset, normalizeTransitionDuration, objectDiff, handleRef, isRefObject, createShorthand, createShorthandFactory, createHTMLDivision, createHTMLIframe, createHTMLImage, createHTMLInput, createHTMLLabel, createHTMLParagraph */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
