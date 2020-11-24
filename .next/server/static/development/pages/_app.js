@@ -425,7 +425,7 @@ function Header({
     },
     __self: this
   }), "My Budget")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/summary",
+    href: "/summaries",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 61
@@ -1706,7 +1706,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function handleLogin(token) {
   js_cookie__WEBPACK_IMPORTED_MODULE_0___default.a.set("token", token);
-  next_router__WEBPACK_IMPORTED_MODULE_1___default.a.push("/account");
+  next_router__WEBPACK_IMPORTED_MODULE_1___default.a.push("/budget");
 }
 function redirectUser(ctx, location) {
   if (ctx.req) {

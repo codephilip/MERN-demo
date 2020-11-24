@@ -1,10 +1,12 @@
 import React from "react";
 import axios from "axios";
 import ProductList from "../components/Index/ProductList";
+//import SummaryList from "../components/Index/SummaryList";
 import baseUrl from "../utils/baseUrl";
 
 function Home({ products }) {
   return <ProductList products={products} />;
+  //return <SummaryList summaries={summaries} />;
 }
 
 Home.getInitialProps = async () => {

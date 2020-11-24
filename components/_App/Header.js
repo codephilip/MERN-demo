@@ -58,7 +58,7 @@ function Header({ user }) {
                 My Budget
               </Menu.Item>
             </Link>
-            <Link href="/summary">
+            <Link href="/summaries">
               <Menu.Item header active={isActive("/summary")}>
                 <Icon name="chart bar" size="large" />
                 Summary

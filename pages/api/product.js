@@ -50,3 +50,6 @@ async function handleDeleteRequest(req, res) {
   await Product.findOneAndDelete({ _id });
   res.status(204).json({});
 }
+
+
+

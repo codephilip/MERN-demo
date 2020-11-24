@@ -1,36 +1,22 @@
-import { Segment } from "semantic-ui-react";
-//import CartItemList from "../components/Cart/CartItemList";
-//import CartSummary from "../components/Cart/CartSummary";
-//import SummaryList from "../components/Index/SummaryList";
-import {parseCookies} from 'nookies';
-import axios from 'axios';
-import SummaryComponent from "../components/Summary/SummaryComponent";
+import axios from "axios";
+import SummarySummary from "../components/Summary/SummarySummary";
+import SummaryAttributes from "../components/Summary/SummaryAttributes";
 import baseUrl from "../utils/baseUrl";
 
-function Summary({user}) {
+function Summary({ summary, user }) {
   return (
-
-    <Segment>
-      <SummaryComponent />
-    </Segment>
+    <>
+      <SummarySummary {...summary} />
+      <SummaryAttributes user={user} {...summary} />
+    </>
   );
-  
 }
 
-Summary.getInitialProps = async () => {
-  // const {token} = parseCookies(ctx);
-  // if(!token){
-  //   return {products:[]};
-  // }
-  const url = `${baseUrl}/api/orders`;
-  const payload = {headers: {Authorization: token}};
-  // fetch data on server
-  
+Summary.getInitialProps = async ({ query: { _id } }) => {
+  const url = `${baseUrl}/api/summary`;
+  const payload = { params: { _id } };
   const response = await axios.get(url, payload);
-  // return response data as an object
   return { summary: response.data };
-  // note: this object will be merged with existing props
 };
-
 
 export default Summary;

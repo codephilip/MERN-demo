@@ -1,7 +1,14 @@
+// import products from "../../static/products.json";
 import Budget from "../../models/Budget";
 import connectDb from "../../utils/connectDb";
 
 connectDb();
+
+// export default async (req, res) => {
+//   const budgets = await Budget.find();
+//   res.status(200).json(budgets);
+// };
+
 
 export default async (req, res) => {
   switch (req.method) {
@@ -22,7 +29,7 @@ export default async (req, res) => {
 
 async function handleGetRequest(req, res) {
   const { user } = req.query;
-  const budget = await Budget.findOne({ user });
+  const budget = await Budget.find();
   res.status(200).json(budget);
 }
 

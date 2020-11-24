@@ -1,8 +1,7 @@
-
 import { Segment } from "semantic-ui-react";
 //import CartItemList from "../components/Cart/CartItemList";
 //import CartSummary from "../components/Cart/CartSummary";
-import BudgetComponent from "../components/Budget/BudgetComponent";
+import BudgetComponent2 from "../components/Budget/BudgetComponent2";
 import {parseCookies} from 'nookies'
 import axios from 'axios'
 
@@ -14,7 +13,7 @@ function Budget({budgets, user}) {
   return (
 
     <Segment>
-      <BudgetComponent/>
+      <BudgetComponent2/>
     </Segment>
   );
   

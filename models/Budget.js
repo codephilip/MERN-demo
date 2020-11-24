@@ -1,31 +1,26 @@
 import mongoose from "mongoose";
-
-const { ObjectId, Number } = mongoose.Schema.Types;
+const {String } = mongoose.Schema.Types;
 
 const BudgetSchema = new mongoose.Schema({
 
     user: {
-        type: ObjectId,
-        ref: "User"
+        type: String,
+        required: true,
     },
-    budgets:[
-        {
-            type: {
-                type: String,
-                required: true,
-                default: 'some'
-            },
-            name: {
-                type: String,
-                required: true,
-                ref: "Name"
-            },
-            ammount:{
-                type: Number,
-                required: true
-            }
-        }
-    ]
+    type: {
+        type: String,
+        required: true,
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    ammount:{
+        type: String,
+        required: true
+    }
+
+
 
 
 });
