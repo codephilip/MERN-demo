@@ -59,14 +59,14 @@ function BudgetComponent2() {
       console.log(product);
       setLoading(true);
       setError("");
-      // const mediaUrl = await handleImageUpload();
-      // const url = `${baseUrl}/api/product`;
-      // const { name, price, description } = product;
-      // const payload = { name, price, description, mediaUrl };
-      // const response = await axios.post(url, payload);
-      // console.log({ response });
-      // setProduct(INITIAL_PRODUCT);
-      // setSuccess(true);
+      const mediaUrl = await handleImageUpload();
+      const url = `${baseUrl}/api/product`;
+      const { name, price, description } = product;
+      const payload = { name, price, description, mediaUrl };
+      const response = await axios.post(url, payload);
+      console.log({ response });
+      setProduct(INITIAL_PRODUCT);
+      setSuccess(true);
     } catch (error) {
       catchErrors(error, setError);
     } finally {

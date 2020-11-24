@@ -13,12 +13,14 @@ import axios from "axios";
 import baseUrl from "../utils/baseUrl";
 import catchErrors from "../utils/catchErrors";
 
+
 const INITIAL_PRODUCT = {
   name: "",
   price: "",
   media: "",
   description: ""
 };
+
 
 function CreateProduct() {
   const [product, setProduct] = React.useState(INITIAL_PRODUCT);

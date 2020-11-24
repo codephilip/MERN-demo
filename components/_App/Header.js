@@ -42,10 +42,10 @@ function Header({ user }) {
         </Link>
 
         {isRootOrAdmin && (
-          <Link href="/create">
-            <Menu.Item header active={isActive("/create")}>
+          <Link href="/budget">
+            <Menu.Item header active={isActive("/budget")}>
               <Icon name="add square" size="large" />
-              Create
+              My Budget
             </Menu.Item>
           </Link>
         )}

@@ -39,9 +39,10 @@ async function handlePostRequest(req, res) {
       mediaUrl
     }).save();
     res.status(201).json(product);
+    console.log(product);
   } catch (error) {
     console.error(error);
-    res.status(500).send("Server error in creating product");
+    res.status(500).send("Server error in creating Record");
   }
 }
 

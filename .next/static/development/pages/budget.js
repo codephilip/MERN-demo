@@ -1,316 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\budget.js"],{
 
-/***/ "./components/Budget/BudgetComponent2.js":
-/*!***********************************************!*\
-  !*** ./components/Budget/BudgetComponent2.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _utils_baseUrl__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../utils/baseUrl */ "./utils/baseUrl.js");
-/* harmony import */ var _utils_catchErrors__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../utils/catchErrors */ "./utils/catchErrors.js");
-
-
-
-
-
-
-var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\components\\Budget\\BudgetComponent2.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
-
-
-
-
-
-var INITIAL_PRODUCT = {
-  name: "",
-  price: "",
-  media: "",
-  description: ""
-};
-
-function BudgetComponent2() {
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(INITIAL_PRODUCT),
-      _React$useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState, 2),
-      product = _React$useState2[0],
-      setProduct = _React$useState2[1];
-
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(""),
-      _React$useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState3, 2),
-      mediaPreview = _React$useState4[0],
-      setMediaPreview = _React$useState4[1];
-
-  var _React$useState5 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(false),
-      _React$useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState5, 2),
-      success = _React$useState6[0],
-      setSuccess = _React$useState6[1];
-
-  var _React$useState7 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(false),
-      _React$useState8 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState7, 2),
-      loading = _React$useState8[0],
-      setLoading = _React$useState8[1];
-
-  var _React$useState9 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(true),
-      _React$useState10 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState9, 2),
-      disabled = _React$useState10[0],
-      setDisabled = _React$useState10[1];
-
-  var _React$useState11 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(""),
-      _React$useState12 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState11, 2),
-      error = _React$useState12[0],
-      setError = _React$useState12[1];
-
-  react__WEBPACK_IMPORTED_MODULE_6___default.a.useEffect(function () {
-    var isProduct = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4___default()(product).every(function (el) {
-      return Boolean(el);
-    });
-
-    isProduct ? setDisabled(false) : setDisabled(true);
-  }, [product]);
-
-  function handleChange(event) {
-    var _event$target = event.target,
-        name = _event$target.name,
-        value = _event$target.value,
-        files = _event$target.files;
-
-    if (name === "media") {
-      setProduct(function (prevState) {
-        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, prevState, {
-          media: files[0]
-        });
-      });
-      setMediaPreview(window.URL.createObjectURL(files[0]));
-    } else {
-      setProduct(function (prevState) {
-        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, prevState, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, name, value));
-      });
-    }
-  }
-
-  function handleImageUpload() {
-    return _handleImageUpload.apply(this, arguments);
-  }
-
-  function _handleImageUpload() {
-    _handleImageUpload = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-    /*#__PURE__*/
-    _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-      var data, response, mediaUrl;
-      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              data = new FormData();
-              data.append("file", product.media);
-              data.append("upload_preset", "reactreserve");
-              data.append("cloud_name", "dbx0fy8zz");
-              _context.next = 6;
-              return axios__WEBPACK_IMPORTED_MODULE_8___default.a.post("<insert-cloudinary-url>", data);
-
-            case 6:
-              response = _context.sent;
-              mediaUrl = response.data.url;
-              return _context.abrupt("return", mediaUrl);
-
-            case 9:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }));
-    return _handleImageUpload.apply(this, arguments);
-  }
-
-  function handleSubmit(_x) {
-    return _handleSubmit.apply(this, arguments);
-  }
-
-  function _handleSubmit() {
-    _handleSubmit = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-    /*#__PURE__*/
-    _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(event) {
-      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              try {
-                event.preventDefault();
-                console.log(product);
-                setLoading(true);
-                setError(""); // const mediaUrl = await handleImageUpload();
-                // const url = `${baseUrl}/api/product`;
-                // const { name, price, description } = product;
-                // const payload = { name, price, description, mediaUrl };
-                // const response = await axios.post(url, payload);
-                // console.log({ response });
-                // setProduct(INITIAL_PRODUCT);
-                // setSuccess(true);
-              } catch (error) {
-                Object(_utils_catchErrors__WEBPACK_IMPORTED_MODULE_10__["default"])(error, setError);
-              } finally {
-                setLoading(false);
-              }
-
-            case 1:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2);
-    }));
-    return _handleSubmit.apply(this, arguments);
-  }
-
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Header"], {
-    as: "h2",
-    block: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: this
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Icon"], {
-    name: "add",
-    color: "orange",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }), "Create New Product"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"], {
-    loading: loading,
-    error: Boolean(error),
-    success: success,
-    onSubmit: handleSubmit,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: this
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Message"], {
-    error: true,
-    header: "Oops!",
-    content: error,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89
-    },
-    __self: this
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Message"], {
-    success: true,
-    icon: "check",
-    header: "Success!",
-    content: "Your product has been posted",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90
-    },
-    __self: this
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Group, {
-    widths: "equal",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"],
-    name: "name",
-    label: "Name",
-    placeholder: "Name",
-    value: product.name,
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: this
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"],
-    name: "price",
-    label: "Price",
-    placeholder: "Price",
-    min: "0.00",
-    step: "0.01",
-    type: "number",
-    value: product.price,
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105
-    },
-    __self: this
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"],
-    name: "media",
-    type: "file",
-    label: "Media",
-    accept: "image/*",
-    content: "Select Image",
-    onChange: handleChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116
-    },
-    __self: this
-  })), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Image"], {
-    src: mediaPreview,
-    rounded: true,
-    centered: true,
-    size: "small",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126
-    },
-    __self: this
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["TextArea"],
-    name: "description",
-    label: "Description",
-    placeholder: "Description",
-    onChange: handleChange,
-    value: product.description,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127
-    },
-    __self: this
-  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Button"],
-    disabled: disabled || loading,
-    color: "blue",
-    icon: "pencil alternate",
-    content: "Submit",
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135
-    },
-    __self: this
-  })));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (BudgetComponent2);
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -3579,216 +3268,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	} else {}
 }());
-
-
-/***/ }),
-
-/***/ "./node_modules/cookie/index.js":
-/*!**************************************!*\
-  !*** ./node_modules/cookie/index.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*!
- * cookie
- * Copyright(c) 2012-2014 Roman Shtylman
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-
-
-/**
- * Module exports.
- * @public
- */
-
-exports.parse = parse;
-exports.serialize = serialize;
-
-/**
- * Module variables.
- * @private
- */
-
-var decode = decodeURIComponent;
-var encode = encodeURIComponent;
-var pairSplitRegExp = /; */;
-
-/**
- * RegExp to match field-content in RFC 7230 sec 3.2
- *
- * field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
- * field-vchar   = VCHAR / obs-text
- * obs-text      = %x80-FF
- */
-
-var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
-
-/**
- * Parse a cookie header.
- *
- * Parse the given cookie header string into an object
- * The object has the various cookies as keys(names) => values
- *
- * @param {string} str
- * @param {object} [options]
- * @return {object}
- * @public
- */
-
-function parse(str, options) {
-  if (typeof str !== 'string') {
-    throw new TypeError('argument str must be a string');
-  }
-
-  var obj = {}
-  var opt = options || {};
-  var pairs = str.split(pairSplitRegExp);
-  var dec = opt.decode || decode;
-
-  for (var i = 0; i < pairs.length; i++) {
-    var pair = pairs[i];
-    var eq_idx = pair.indexOf('=');
-
-    // skip things that don't look like key=value
-    if (eq_idx < 0) {
-      continue;
-    }
-
-    var key = pair.substr(0, eq_idx).trim()
-    var val = pair.substr(++eq_idx, pair.length).trim();
-
-    // quoted values
-    if ('"' == val[0]) {
-      val = val.slice(1, -1);
-    }
-
-    // only assign once
-    if (undefined == obj[key]) {
-      obj[key] = tryDecode(val, dec);
-    }
-  }
-
-  return obj;
-}
-
-/**
- * Serialize data into a cookie header.
- *
- * Serialize the a name value pair into a cookie string suitable for
- * http headers. An optional options object specified cookie parameters.
- *
- * serialize('foo', 'bar', { httpOnly: true })
- *   => "foo=bar; httpOnly"
- *
- * @param {string} name
- * @param {string} val
- * @param {object} [options]
- * @return {string}
- * @public
- */
-
-function serialize(name, val, options) {
-  var opt = options || {};
-  var enc = opt.encode || encode;
-
-  if (typeof enc !== 'function') {
-    throw new TypeError('option encode is invalid');
-  }
-
-  if (!fieldContentRegExp.test(name)) {
-    throw new TypeError('argument name is invalid');
-  }
-
-  var value = enc(val);
-
-  if (value && !fieldContentRegExp.test(value)) {
-    throw new TypeError('argument val is invalid');
-  }
-
-  var str = name + '=' + value;
-
-  if (null != opt.maxAge) {
-    var maxAge = opt.maxAge - 0;
-    if (isNaN(maxAge)) throw new Error('maxAge should be a Number');
-    str += '; Max-Age=' + Math.floor(maxAge);
-  }
-
-  if (opt.domain) {
-    if (!fieldContentRegExp.test(opt.domain)) {
-      throw new TypeError('option domain is invalid');
-    }
-
-    str += '; Domain=' + opt.domain;
-  }
-
-  if (opt.path) {
-    if (!fieldContentRegExp.test(opt.path)) {
-      throw new TypeError('option path is invalid');
-    }
-
-    str += '; Path=' + opt.path;
-  }
-
-  if (opt.expires) {
-    if (typeof opt.expires.toUTCString !== 'function') {
-      throw new TypeError('option expires is invalid');
-    }
-
-    str += '; Expires=' + opt.expires.toUTCString();
-  }
-
-  if (opt.httpOnly) {
-    str += '; HttpOnly';
-  }
-
-  if (opt.secure) {
-    str += '; Secure';
-  }
-
-  if (opt.sameSite) {
-    var sameSite = typeof opt.sameSite === 'string'
-      ? opt.sameSite.toLowerCase() : opt.sameSite;
-
-    switch (sameSite) {
-      case true:
-        str += '; SameSite=Strict';
-        break;
-      case 'lax':
-        str += '; SameSite=Lax';
-        break;
-      case 'strict':
-        str += '; SameSite=Strict';
-        break;
-      case 'none':
-        str += '; SameSite=None';
-        break;
-      default:
-        throw new TypeError('option sameSite is invalid');
-    }
-  }
-
-  return str;
-}
-
-/**
- * Try decoding a string using a decoding function.
- *
- * @param {string} str
- * @param {function} decode
- * @private
- */
-
-function tryDecode(str, decode) {
-  try {
-    return decode(str);
-  } catch (e) {
-    return str;
-  }
-}
 
 
 /***/ }),
@@ -22654,153 +22133,6 @@ module.exports = lodash;
       return { page: page.default || page }
     }]);
   
-
-/***/ }),
-
-/***/ "./node_modules/nookies/dist/index.js":
-/*!********************************************!*\
-  !*** ./node_modules/nookies/dist/index.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var cookie = __webpack_require__(/*! cookie */ "./node_modules/cookie/index.js");
-var setCookieParser = __webpack_require__(/*! set-cookie-parser */ "./node_modules/set-cookie-parser/lib/set-cookie.js");
-var isBrowser = function () { return typeof window !== 'undefined'; };
-/**
- * Compare the cookie and return true if the cookies has equivalent
- * options and the cookies would be overwritten in the browser storage.
- *
- * @param a first Cookie for comparision
- * @param b second Cookie for comparision
- */
-function areCookiesEqual(a, b) {
-    return (a.name === b.name &&
-        a.domain === b.domain &&
-        a.path === b.path &&
-        a.httpOnly === b.httpOnly &&
-        a.secure === b.secure);
-}
-/**
- * Create an instance of the Cookie interface
- *
- * @param name name of the Cookie
- * @param value value of the Cookie
- * @param options Cookie options
- */
-function createCookie(name, value, options) {
-    return {
-        name: name,
-        expires: options.expires,
-        maxAge: options.maxAge,
-        secure: options.secure,
-        httpOnly: options.httpOnly,
-        domain: options.domain,
-        value: value,
-        path: options.path,
-    };
-}
-/**
- *
- * Parses cookies.
- *
- * @param ctx
- * @param options
- */
-function parseCookies(ctx, options) {
-    if (ctx && ctx.req && ctx.req.headers && ctx.req.headers.cookie) {
-        return cookie.parse(ctx.req.headers.cookie, options);
-    }
-    if (isBrowser()) {
-        return cookie.parse(document.cookie, options);
-    }
-    return {};
-}
-exports.parseCookies = parseCookies;
-/**
- *
- * Sets a cookie.
- *
- * @param ctx
- * @param name
- * @param value
- * @param options
- */
-function setCookie(ctx, name, value, options) {
-    if (ctx && ctx.res && ctx.res.getHeader && ctx.res.setHeader) {
-        var cookies = ctx.res.getHeader('Set-Cookie') || [];
-        if (typeof cookies === 'string')
-            cookies = [cookies];
-        if (typeof cookies === 'number')
-            cookies = [];
-        var parsedCookies = setCookieParser.parse(cookies);
-        var cookiesToSet_1 = [];
-        parsedCookies.forEach(function (parsedCookie) {
-            if (!areCookiesEqual(parsedCookie, createCookie(name, value, options))) {
-                cookiesToSet_1.push(cookie.serialize(parsedCookie.name, parsedCookie.value, {
-                    domain: parsedCookie.domain,
-                    path: parsedCookie.path,
-                    httpOnly: parsedCookie.httpOnly,
-                    secure: parsedCookie.secure,
-                    maxAge: parsedCookie.maxAge,
-                    expires: parsedCookie.expires,
-                }));
-            }
-        });
-        cookiesToSet_1.push(cookie.serialize(name, value, options));
-        ctx.res.setHeader('Set-Cookie', cookiesToSet_1);
-    }
-    if (isBrowser()) {
-        document.cookie = cookie.serialize(name, value, options);
-    }
-    return {};
-}
-exports.setCookie = setCookie;
-/**
- *
- * Destroys a cookie with a particular name.
- *
- * @param ctx
- * @param name
- * @param options
- */
-function destroyCookie(ctx, name, options) {
-    var opts = __assign({}, (options || {}), { maxAge: -1 });
-    if (ctx && ctx.res && ctx.res.setHeader && ctx.res.getHeader) {
-        var cookies = ctx.res.getHeader('Set-Cookie') || [];
-        if (typeof cookies === 'string')
-            cookies = [cookies];
-        if (typeof cookies === 'number')
-            cookies = [];
-        cookies.push(cookie.serialize(name, '', opts));
-        ctx.res.setHeader('Set-Cookie', cookies);
-    }
-    if (isBrowser()) {
-        document.cookie = cookie.serialize(name, '', opts);
-    }
-    return {};
-}
-exports.destroyCookie = destroyCookie;
-exports.default = {
-    set: setCookie,
-    get: parseCookies,
-    destroy: destroyCookie,
-};
-//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -54681,189 +54013,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/set-cookie-parser/lib/set-cookie.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/set-cookie-parser/lib/set-cookie.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var defaultParseOptions = {
-  decodeValues: true,
-  map: false
-};
-
-function isNonEmptyString(str) {
-  return typeof str === "string" && !!str.trim();
-}
-
-function parseString(setCookieValue, options) {
-  var parts = setCookieValue.split(";").filter(isNonEmptyString);
-  var nameValue = parts.shift().split("=");
-  var name = nameValue.shift();
-  var value = nameValue.join("="); // everything after the first =, joined by a "=" if there was more than one part
-  var cookie = {
-    name: name, // grab everything before the first =
-    value: options.decodeValues ? decodeURIComponent(value) : value // decode cookie value
-  };
-
-  parts.forEach(function(part) {
-    var sides = part.split("=");
-    var key = sides
-      .shift()
-      .trimLeft()
-      .toLowerCase();
-    var value = sides.join("=");
-    if (key === "expires") {
-      cookie.expires = new Date(value);
-    } else if (key === "max-age") {
-      cookie.maxAge = parseInt(value, 10);
-    } else if (key === "secure") {
-      cookie.secure = true;
-    } else if (key === "httponly") {
-      cookie.httpOnly = true;
-    } else if (key === "samesite") {
-      cookie.sameSite = value;
-    } else {
-      cookie[key] = value;
-    }
-  });
-
-  return cookie;
-}
-
-function parse(input, options) {
-  if (!input) {
-    return [];
-  }
-  if (input.headers) {
-    input =
-      // fast-path for node.js (which automatically normalizes header names to lower-case
-      input.headers["set-cookie"] ||
-      // slow-path for other environments - see #25
-      input.headers[
-        Object.keys(input.headers).find(function(key) {
-          return key.toLowerCase() === "set-cookie";
-        })
-      ];
-  }
-  if (!Array.isArray(input)) {
-    input = [input];
-  }
-
-  options = options
-    ? Object.assign({}, defaultParseOptions, options)
-    : defaultParseOptions;
-
-  if (!options.map) {
-    return input.filter(isNonEmptyString).map(function(str) {
-      return parseString(str, options);
-    });
-  } else {
-    var cookies = {};
-    return input.filter(isNonEmptyString).reduce(function(cookies, str) {
-      var cookie = parseString(str, options);
-      cookies[cookie.name] = cookie;
-      return cookies;
-    }, cookies);
-  }
-}
-
-/*
-  Set-Cookie header field-values are sometimes comma joined in one string. This splits them without choking on commas
-  that are within a single set-cookie field-value, such as in the Expires portion.
-
-  This is uncommon, but explicitly allowed - see https://tools.ietf.org/html/rfc2616#section-4.2
-  Node.js does this for every header *except* set-cookie - see https://github.com/nodejs/node/blob/d5e363b77ebaf1caf67cd7528224b651c86815c1/lib/_http_incoming.js#L128
-  React Native's fetch does this for *every* header, including set-cookie.
-
-  Based on: https://github.com/google/j2objc/commit/16820fdbc8f76ca0c33472810ce0cb03d20efe25
-  Credits to: https://github.com/tomball for original and https://github.com/chrusart for JavaScript implementation
-*/
-function splitCookiesString(cookiesString) {
-  if (Array.isArray(cookiesString)) {
-    return cookiesString;
-  }
-  if (typeof cookiesString !== "string") {
-    return [];
-  }
-
-  var cookiesStrings = [];
-  var pos = 0;
-  var start;
-  var ch;
-  var lastComma;
-  var nextStart;
-  var cookiesSeparatorFound;
-
-  function skipWhitespace() {
-    while (pos < cookiesString.length && /\s/.test(cookiesString.charAt(pos))) {
-      pos += 1;
-    }
-    return pos < cookiesString.length;
-  }
-
-  function notSpecialChar() {
-    ch = cookiesString.charAt(pos);
-
-    return ch !== "=" && ch !== ";" && ch !== ",";
-  }
-
-  while (pos < cookiesString.length) {
-    start = pos;
-    cookiesSeparatorFound = false;
-
-    while (skipWhitespace()) {
-      ch = cookiesString.charAt(pos);
-      if (ch === ",") {
-        // ',' is a cookie separator if we have later first '=', not ';' or ','
-        lastComma = pos;
-        pos += 1;
-
-        skipWhitespace();
-        nextStart = pos;
-
-        while (pos < cookiesString.length && notSpecialChar()) {
-          pos += 1;
-        }
-
-        // currently special character
-        if (pos < cookiesString.length && cookiesString.charAt(pos) === "=") {
-          // we found cookies separator
-          cookiesSeparatorFound = true;
-          // pos is inside the next cookie, so back up and return it.
-          pos = nextStart;
-          cookiesStrings.push(cookiesString.substring(start, lastComma));
-          start = pos;
-        } else {
-          // in param ',' or param separator ';',
-          // we continue from that comma
-          pos = lastComma + 1;
-        }
-      } else {
-        pos += 1;
-      }
-    }
-
-    if (!cookiesSeparatorFound || pos >= cookiesString.length) {
-      cookiesStrings.push(cookiesString.substring(start, cookiesString.length));
-    }
-  }
-
-  return cookiesStrings;
-}
-
-module.exports = parse;
-module.exports.parse = parse;
-module.exports.parseString;
-module.exports.splitCookiesString = splitCookiesString;
-
-
-/***/ }),
-
 /***/ "./node_modules/shallowequal/index.js":
 /*!********************************************!*\
   !*** ./node_modules/shallowequal/index.js ***!
@@ -55071,98 +54220,327 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _components_Budget_BudgetComponent2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Budget/BudgetComponent2 */ "./components/Budget/BudgetComponent2.js");
-/* harmony import */ var nookies__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nookies */ "./node_modules/nookies/dist/index.js");
-/* harmony import */ var nookies__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nookies__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _utils_baseUrl__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/baseUrl */ "./utils/baseUrl.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _utils_baseUrl__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/baseUrl */ "./utils/baseUrl.js");
+/* harmony import */ var _utils_catchErrors__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/catchErrors */ "./utils/catchErrors.js");
+
+
+
+
 
 
 var _jsxFileName = "C:\\Users\\phili\\Documents\\Coding\\MERN\\11.21.20MERN\\pages\\budget.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
- //import CartItemList from "../components/Cart/CartItemList";
-//import CartSummary from "../components/Cart/CartSummary";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 
 
 
 
+var INITIAL_PRODUCT = {
+  name: "",
+  price: "",
+  media: "",
+  description: ""
+};
 
-function Budget(_ref) {
-  var budgets = _ref.budgets,
-      user = _ref.user;
-  console.log(budgets);
-  return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Segment"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx(_components_Budget_BudgetComponent2__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }));
-}
+function Budget() {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(INITIAL_PRODUCT),
+      _React$useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState, 2),
+      product = _React$useState2[0],
+      setProduct = _React$useState2[1];
 
-Budget.getInitialProps =
-/*#__PURE__*/
-function () {
-  var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(ctx) {
-    var _parseCookies, token, url, payload, response;
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(""),
+      _React$useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState3, 2),
+      mediaPreview = _React$useState4[0],
+      setMediaPreview = _React$useState4[1];
 
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            _parseCookies = Object(nookies__WEBPACK_IMPORTED_MODULE_5__["parseCookies"])(ctx), token = _parseCookies.token; //redundant securtity layer
+  var _React$useState5 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(false),
+      _React$useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState5, 2),
+      success = _React$useState6[0],
+      setSuccess = _React$useState6[1];
 
-            if (token) {
-              _context.next = 3;
-              break;
-            }
+  var _React$useState7 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(false),
+      _React$useState8 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState7, 2),
+      loading = _React$useState8[0],
+      setLoading = _React$useState8[1];
 
-            return _context.abrupt("return", {
-              budgets: []
-            });
+  var _React$useState9 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(true),
+      _React$useState10 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState9, 2),
+      disabled = _React$useState10[0],
+      setDisabled = _React$useState10[1];
 
-          case 3:
-            url = "".concat(_utils_baseUrl__WEBPACK_IMPORTED_MODULE_7__["default"], "/api/budget");
-            payload = {
-              headers: {
-                Authorization: token
-              }
-            };
-            _context.next = 7;
-            return axios__WEBPACK_IMPORTED_MODULE_6___default.a.get(url, payload);
+  var _React$useState11 = react__WEBPACK_IMPORTED_MODULE_6___default.a.useState(""),
+      _React$useState12 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_React$useState11, 2),
+      error = _React$useState12[0],
+      setError = _React$useState12[1];
 
-          case 7:
-            response = _context.sent;
-            return _context.abrupt("return", {
-              budgets: response.data
-            });
+  react__WEBPACK_IMPORTED_MODULE_6___default.a.useEffect(function () {
+    var isProduct = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4___default()(product).every(function (el) {
+      return Boolean(el);
+    });
 
-          case 9:
-          case "end":
-            return _context.stop();
+    isProduct ? setDisabled(false) : setDisabled(true);
+  }, [product]);
+
+  function handleChange(event) {
+    var _event$target = event.target,
+        name = _event$target.name,
+        value = _event$target.value,
+        files = _event$target.files;
+
+    if (name === "media") {
+      setProduct(function (prevState) {
+        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, prevState, {
+          media: files[0]
+        });
+      });
+      setMediaPreview(window.URL.createObjectURL(files[0]));
+    } else {
+      setProduct(function (prevState) {
+        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, prevState, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, name, value));
+      });
+    }
+  }
+
+  function handleImageUpload() {
+    return _handleImageUpload.apply(this, arguments);
+  }
+
+  function _handleImageUpload() {
+    _handleImageUpload = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+    /*#__PURE__*/
+    _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var data, response, mediaUrl;
+      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              data = new FormData();
+              data.append("file", product.media);
+              data.append("upload_preset", "reactreserve");
+              data.append("cloud_name", "dbx0fy8zz");
+              _context.next = 6;
+              return axios__WEBPACK_IMPORTED_MODULE_8___default.a.post("https://api.cloudinary.com/v1_1/dbx0fy8zz/image/upload", data);
+
+            case 6:
+              response = _context.sent;
+              mediaUrl = response.data.url;
+              return _context.abrupt("return", mediaUrl);
+
+            case 9:
+            case "end":
+              return _context.stop();
+          }
         }
-      }
-    }, _callee);
-  }));
+      }, _callee);
+    }));
+    return _handleImageUpload.apply(this, arguments);
+  }
 
-  return function (_x) {
-    return _ref2.apply(this, arguments);
-  };
-}();
+  function handleSubmit(_x) {
+    return _handleSubmit.apply(this, arguments);
+  }
+
+  function _handleSubmit() {
+    _handleSubmit = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+    /*#__PURE__*/
+    _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(event) {
+      var mediaUrl, url, name, price, description, payload, response;
+      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              event.preventDefault();
+              console.log(product);
+              setProduct(INITIAL_PRODUCT);
+              setSuccess(true);
+              _context2.prev = 4;
+              event.preventDefault();
+              setLoading(true);
+              setError("");
+              _context2.next = 10;
+              return handleImageUpload();
+
+            case 10:
+              mediaUrl = _context2.sent;
+              url = "".concat(_utils_baseUrl__WEBPACK_IMPORTED_MODULE_9__["default"], "/api/product");
+              name = product.name, price = product.price, description = product.description;
+              payload = {
+                name: name,
+                price: price,
+                description: description,
+                mediaUrl: mediaUrl
+              };
+              _context2.next = 16;
+              return axios__WEBPACK_IMPORTED_MODULE_8___default.a.post(url, payload);
+
+            case 16:
+              response = _context2.sent;
+              console.log({
+                response: response
+              });
+              setProduct(INITIAL_PRODUCT);
+              setSuccess(true);
+              _context2.next = 25;
+              break;
+
+            case 22:
+              _context2.prev = 22;
+              _context2.t0 = _context2["catch"](4);
+              Object(_utils_catchErrors__WEBPACK_IMPORTED_MODULE_10__["default"])(_context2.t0, setError);
+
+            case 25:
+              _context2.prev = 25;
+              setLoading(false);
+              return _context2.finish(25);
+
+            case 28:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2, null, [[4, 22, 25, 28]]);
+    }));
+    return _handleSubmit.apply(this, arguments);
+  }
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Header"], {
+    as: "h2",
+    block: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Icon"], {
+    name: "add",
+    color: "orange",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), "Create New Record"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"], {
+    loading: loading,
+    error: Boolean(error),
+    success: success,
+    onSubmit: handleSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Message"], {
+    error: true,
+    header: "Oops!",
+    content: error,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
+    },
+    __self: this
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Message"], {
+    success: true,
+    icon: "check",
+    header: "Success!",
+    content: "New Record has been posted",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Group, {
+    widths: "equal",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
+    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"],
+    name: "name",
+    label: "Name",
+    placeholder: "Name",
+    value: product.name,
+    onChange: handleChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104
+    },
+    __self: this
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
+    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"],
+    name: "price",
+    label: "Price",
+    placeholder: "Price",
+    min: "0.00",
+    step: "0.01",
+    type: "number",
+    value: product.price,
+    onChange: handleChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
+    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"],
+    name: "media",
+    type: "file",
+    label: "Media",
+    accept: "image/*",
+    content: "Select Image",
+    onChange: handleChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  })), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Image"], {
+    src: mediaPreview,
+    rounded: true,
+    centered: true,
+    size: "small",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
+    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["TextArea"],
+    name: "description",
+    label: "Description",
+    placeholder: "Description",
+    onChange: handleChange,
+    value: product.description,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: this
+  }), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Form"].Field, {
+    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Button"],
+    disabled: disabled || loading,
+    color: "blue",
+    icon: "pencil alternate",
+    content: "Submit",
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142
+    },
+    __self: this
+  })));
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Budget);
 
@@ -55219,7 +54597,7 @@ function catchErrors(error, displayError) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbudget&absolutePagePath=C%3A%5CUsers%5Cphili%5CDocuments%5CCoding%5CMERN%5C11.21.20MERN%5Cpages%5Cbudget.js ***!
   \**********************************************************************************************************************************************************/
@@ -55242,5 +54620,5 @@ module.exports = dll_58572173d5d0f39474c5;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=budget.js.map

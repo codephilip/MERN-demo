@@ -15,10 +15,6 @@
     "/budget": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/summary": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

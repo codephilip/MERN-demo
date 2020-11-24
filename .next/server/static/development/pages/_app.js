@@ -379,7 +379,7 @@ function Header({
     },
     __self: this
   }), "About")), isRootOrAdmin && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/create",
+    href: "/budget",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
@@ -387,7 +387,7 @@ function Header({
     __self: this
   }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
     header: true,
-    active: isActive("/create"),
+    active: isActive("/budget"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
@@ -401,7 +401,7 @@ function Header({
       lineNumber: 47
     },
     __self: this
-  }), "Create")), user ? __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }), "My Budget")), user ? __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/budget",
     __source: {
       fileName: _jsxFileName,
